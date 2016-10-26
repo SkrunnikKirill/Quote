@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/toolbar_selector"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/rel_lay_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/rel_marTop"
+        android:padding="@dimen/padding">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/start_button_style"
+            android:hint="@string/start"
+            android:textColorHint="@color/white"
+            android:textSize="25dp"
+            tools:ignore="SpUsage"/>
+
+        <Button
+            android:id="@+id/favorite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_below="@+id/start"
+            android:layout_marginTop="@dimen/btn_marTop"
+            android:background="@drawable/favorite_button_style"
+            android:hint="@string/favorite"
+            android:textColorHint="@color/white"
+            android:textSize="25dp"
+            tools:ignore="SpUsage"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/login_activity_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/logotip"/>
+
+    <TextView
+        android:id="@+id/toolbar_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="40sp"/>
+</RelativeLayout>

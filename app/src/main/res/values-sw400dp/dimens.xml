@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rel_lay_width">290dp</dimen>
+    <dimen name="btn_height">65dp</dimen>
+    <dimen name="btn_marTop">20dp</dimen>
+    <dimen name="rel_marTot">463dp</dimen>
+    <dimen name="padding">0dp</dimen>
+
+
+    //MainActivity
+    <dimen name="rlay_weight">150dp</dimen>
+    <dimen name="rlay_height">80dp</dimen>
+    <dimen name="btn2_martop">55dp</dimen>
+    <dimen name="btn_marleft">45dp</dimen>
+    <dimen name="btn_marright">45dp</dimen>
+    <dimen name="btn2_height">80dp</dimen>
+    <dimen name="btn2_marleft">90dp</dimen>
+    <dimen name="mTop">20dp</dimen>
+    <dimen name="mTop2">30dp</dimen>
+    <dimen name="mBot2">25dp</dimen>
+    <dimen name="rel_height">357dp</dimen>
+
+</resources>

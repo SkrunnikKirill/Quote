@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context="com.example.alscon.quoter.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/toolbar_selector"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rel_height"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/btn_marleft"
+        android:layout_marginRight="@dimen/btn_marright"
+        tools:ignore="RtlHardcoded">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
+
+            <TextView
+                android:id="@+id/citation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/mTop2"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                tools:ignore="SpUsage"
+                tools:targetApi="jelly_bean"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rel"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="@dimen/rlay_weight"
+            android:layout_height="@dimen/rlay_height"
+            android:layout_marginLeft="@dimen/btn_marleft"
+            android:background="@drawable/generate_buttons_style"
+            android:clickable="true"
+            android:hint="@string/previous"
+            android:src="@android:drawable/btn_minus"
+            android:textColorHint="@color/white"
+            android:textSize="23dp"
+            tools:ignore="RtlHardcoded,SpUsage"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="@dimen/rlay_weight"
+            android:layout_height="@dimen/rlay_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/btn_marright"
+            android:background="@drawable/generate_buttons_style"
+            android:hint="@string/next"
+            android:textColorHint="@color/white"
+            android:textSize="23dp"
+            tools:ignore="RtlHardcoded,SpUsage"/>
+
+        <Button
+            android:id="@+id/add_citation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn2_height"
+            android:layout_below="@+id/previous"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/btn2_marleft"
+            android:layout_marginTop="@dimen/mTop"
+            android:background="@drawable/generate_buttons_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:hint="@string/add"
+            android:src="@android:drawable/ic_input_add"
+            android:textColorHint="@color/white"
+            android:textSize="23dp"
+            tools:ignore="RtlHardcoded,SpUsage"/>
+    </RelativeLayout>
+</RelativeLayout>
